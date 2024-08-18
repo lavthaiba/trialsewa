@@ -9146,7 +9146,7 @@ textarea.form-control {
   .ftco-footer .ftco-heading-2 {
     font-size: 17px;
     font-weight: 400;
-    color: #000000; }
+    color: #3cb34d !important; }
 
 .ftco-footer-social li {
   list-style: none;
@@ -9246,7 +9246,7 @@ textarea.form-control {
     box-shadow: 0 0 0 0 rgba(252, 152, 60, 0); } }
 
 .heading-section .subheading {
-  font-size: 18px;
+  font-size: 20px !important;
   display: block;
   margin-bottom: 5px;
   color: #3cb34d;
