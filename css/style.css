@@ -8115,7 +8115,7 @@ h1, h2, h3, h4, h5,
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0;
-        color: #fff; } }
+        color: #3c9f20; } }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     border: none;
     background: #fff;
@@ -9003,7 +9003,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     width: 80px;
     height: 80px;
-    background: #000000;
+    background: #fff;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -9947,4 +9947,10 @@ textarea.form-control {
 
 .card-header .btn-link:not(.collapsed)::after {
     transform: rotate(45deg);
+}
+
+
+section.hero-wrap.hero-wrap-2.js-fullheight {
+    background: linear-gradient(0deg, rgb(65 175 82 / 56%), rgb(1 1 1)), url(images/blog1.jpg);
+    background-size: cover;
 }
