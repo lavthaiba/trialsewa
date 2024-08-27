@@ -10001,3 +10001,7 @@ h1.mb-4 {
 .slider-text .icon-wrap .heading-title span:hover {
 	color: #3cb34d;
 }
+
+.contact-section .contact-info p a:hover{
+	color: #3cb34d;
+}
