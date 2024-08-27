@@ -8291,6 +8291,7 @@ h1, h2, h3, h4, h5,
       height: 1150px; } }
   .slider-text h1 {
     font-size: 60px;
+	text-align:left;
     color: #3cb34d;
     line-height: 1.1;
     font-weight: 200; }
@@ -8323,6 +8324,7 @@ h1, h2, h3, h4, h5,
       font-family: "Poppins", Arial, sans-serif;
       color: #fff; }
   .slider-text p {
+	  text-align:left;
     line-height: 1.5;
     color: white; }
   .slider-text .breadcrumbs {
@@ -9964,9 +9966,22 @@ span.oi.oi-menu {
     margin-right: 20px;
 }
 
+
+
 h1.mb-4 {
-    color: #3cb34d;
+    color: #fff;
+    font-style: italic;
+    font-weight: 100; /* Very light weight */
+    /*text-shadow: -1px 0px 0px rgba(59, 181, 74, 0.5), 3px -4px 3px rgba(0, 0, 0, 0.5), 0px 0px 30px rgba(59, 181, 74, 0.5), 0px 0px 10px rgba(59, 181, 74, 0.5), 0px 0px 10px rgba(59, 181, 74, 0.5);*/
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensure pseudo-element doesn’t overflow */
+    font-size: calc(2.5rem + 1vw); /* Responsive font size */
+    line-height: 1.2; /* Adjust line-height for better text alignment */
 }
+
+
+
 
 @media only screen and (max-width: 600px) {
   iframe {
@@ -9977,10 +9992,16 @@ h1.mb-4 {
 
 @media only screen and (max-width: 600px) {
   .text {
-    margin-bottom: 25%;
+    margin-bottom: 160%;
   }
 }
 
+@media only screen and (max-width: 600px) {
+.d-flex{
+	text-align:center;
+}
+
+}
 .ftco-footer .ftco-footer-widget ul li a span:hover {
     color: #3cb34d;
 }
@@ -10004,4 +10025,22 @@ h1.mb-4 {
 
 .contact-section .contact-info p a:hover{
 	color: #3cb34d;
+}
+
+.tab-pane a> img:hover {
+    background: #3cb34d;
+}
+
+.goog-te-combo option[value="ne"] {
+    font-weight: bold;  /* Makes Nepali appear bold in the dropdown */
+    order: 1;  /* Attempt to reorder Nepali in the dropdown */
+}
+
+@media only screen and (max-width: 600px) {
+.hero-wrap{
+	height:620px;;
+}
+
+.oi {
+	font-size: 2em;
 }

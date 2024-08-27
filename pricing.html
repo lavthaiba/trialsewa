@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -21,6 +21,50 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Additional Styles for Tabs */
+        .tab-content {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .nav-tabs .nav-link {
+            border: none;
+            border-radius: 0;
+            background: #e9ecef;
+            color: #495057;
+        }
+        .nav-tabs .nav-link.active {
+            background: #3cb34d;
+            color: #fff;
+			font-weight:400;
+			font-size:1.3em;
+        }
+        .nav-tabs {
+            margin-bottom: 20px;
+        }
+        .tab-pane img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .pricing-table .pricing-item {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+	    	  <meta name="google-translate-customization" content="example-content">
+
   </head>
   <body>
     
@@ -40,12 +84,14 @@
             <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 			<li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+		    <li class="nav-item"><a href="#" class="nav-link" id="google_translate_element"></a></li>
+
           </ul>
         </div>
       </div>
     </nav>
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/background.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/INNER_BANNER.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -57,79 +103,83 @@
       </div>
     </section>
 
-    <section class="ftco-section ftco-cart">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 ftco-animate">
-            <div class="car-list">
-              <table class="table">
-                <thead class="thead-primary">
-                  <tr class="text-center">
-                    <th>&nbsp;</th>
-                    <th>&nbsp;</th>
-                    <th class="bg-primary heading">Standard Trial</th>
-                    <th class="bg-dark heading">Discounted Trial</th>
-                    <th class="bg-black heading">Premium Trial</th>
-                    <th class="bg-success heading">Platinum Trial</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="">
-                    <td class="car-image"><div class="img" style="background-image:url(images/car-1.jpg);"></div></td>
-                    <td class="product-name">
-                      <h3>Our Trial Package</h3>
-                      <p class="mb-0 rated">
-                        <span>Rated:</span>
-                        <span class="ion-ios-star"></span>
-                        <span class="ion-ios-star"></span>
-                        <span class="ion-ios-star"></span>
-                        <span class="ion-ios-star"></span>
-                        <span class="ion-ios-star"></span>
-                      </p>
-                    </td>
-                    <td class="price">
-                      <div class="price-rate">
-                        <h3>
-                          <span class="num"><small class="currency">NPR</small> 1199</span>
-                          <span class="per">/per hour</span>
-                        </h3>
-                      </div>
-                    </td>
-                    <td class="price">
-                      <div class="price-rate">
-                        <h3>
-                          <span class="num"><small class="currency">NPR</small> 8500</span>
-                          <span class="per">/per week</span>
-                        </h3>
-                      </div>
-                    </td>
-                    <td class="price">
-                      <div class="price-rate">
-                        <h3>
-                          <span class="num"><small class="currency">NPR</small> 29999</span>
-                          <span class="per">/per month</span>
-                        </h3>
-                      </div>
-                    </td>
-                    <td class="price">
-                      <div class="price-rate">
-                        <h3>
-                          <span class="num"><small class="currency">NPR</small> 17999</span>
-                          <span class="per">/bi-weekly</span>
-                        </h3>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <!-- Add additional rows for other trial packages if needed -->
-                  
-                </tbody>
-              </table>
+    
+	
+	 <section class="ftco-section ftco-cart">
+        <div class="container">
+            <ul class="nav nav-tabs" id="pricingTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="motorcycle-tab" data-toggle="tab" href="#motorcycle" role="tab" aria-controls="motorcycle" aria-selected="true">Motorcycle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="scooter-tab" data-toggle="tab" href="#scooter" role="tab" aria-controls="scooter" aria-selected="false">Scooter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="car-jeep-tab" data-toggle="tab" href="#car-jeep" role="tab" aria-controls="car-jeep" aria-selected="false">Car/Jeep</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pricingTabsContent">
+                <div class="tab-pane fade show active" id="motorcycle" role="tabpanel" aria-labelledby="motorcycle-tab">
+                    <div class="pricing-table">
+                        <div class="pricing-item">
+                            <h3>Hourly</h3>
+                           <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"> <img src="images/BIKE_HOURLY.jpg" alt="Motorcycle Hourly Pricing"></a>
+                        </div>
+						<div class="pricing-item">
+                            <h3>Weekly</h3>
+                            <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"><img src="images/BIKE_WEEKLY.jpg" alt="Motorcycle Weekly Pricing"></a>
+                        </div>
+                        <div class="pricing-item">
+                            <h3>Quarterly</h3>
+                            <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"><img src="images/BIKE_QUARTERLY_ZERO.jpg" alt="Motorcycle Weekly Pricing"></a>
+                        </div>
+						
+                       
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="scooter" role="tabpanel" aria-labelledby="scooter-tab">
+                    <div class="pricing-table">
+                        <div class="pricing-item">
+                            <h3>Hourly</h3>
+                            <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"><img src="images/SCOOTER_HOURLY.jpg" alt="Scooter Hourly Pricing"></a>
+                        </div>
+                        <div class="pricing-item">
+                            <h3>Weekly</h3>
+                           <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"> <img src="images/SCOOTER_WEEKLY.jpg" alt="Scooter Weekly Pricing"></a>
+                        </div>
+						
+						<div class="pricing-item">
+                            <h3>Quarterly</h3>
+                           <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"> <img src="images/SCOOTER_QUARTERLY_ZERO.jpg" alt="Scooter Weekly Pricing"></a>
+                        </div>
+						
+						
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="car-jeep" role="tabpanel" aria-labelledby="car-jeep-tab">
+                    <div class="pricing-table">
+                        <div class="pricing-item">
+                            <h3>Hourly</h3>
+                            <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"><img src="images/CAR_HOURLY.jpg" alt="Car/Jeep Hourly Pricing"></a>
+                        </div>
+                        <div class="pricing-item">
+                            <h3>Weekly</h3>
+                            <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"><img src="images/CAR_WEEKLY.jpg" alt="Car/Jeep Weekly Pricing"></a>
+                        </div>
+						<div class="pricing-item">
+                            <h3>Quarterly</h3>
+                            <a href="https://docs.google.com/forms/d/1S2CG8cXpbSNXMFsfsL8mzBca0zcNY4SmOGAzyMD0EOE/viewform?edit_requested=true" target="_blank"><img src="images/CAR_QUARTERLY.jpg" alt="Car/Jeep Weekly Pricing"></a>
+                        </div>
+						
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
+	
+	
+	
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -206,5 +256,16 @@
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
+	<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ne,hi,fr,es,zh-CN,ja',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+	    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
   </body>
 </html>
