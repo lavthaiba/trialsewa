@@ -6502,9 +6502,13 @@ button.bg-dark:focus {
 .mx-4 {
   margin-right: 1.5rem !important; }
 
-.mb-4,
-.my-4 {
-  margin-bottom: 1.5rem !important; }
+.my-h1 {
+  margin-bottom: 1.5rem !important; 
+  line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+	font-size: 40px;
+  }
 
 .ml-4,
 .mx-4 {
@@ -10081,3 +10085,10 @@ padding-bottom: 22rem; }
 }
 }
 
+@media only screen and (max-width: 600px) {
+.my-h1 {
+  
+	font-size: 28px;
+  }
+  
+}
