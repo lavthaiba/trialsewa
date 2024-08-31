@@ -483,7 +483,9 @@ pre {
   .no-gutters > .col,
   .no-gutters > [class*="col-"] {
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0; 
+	top: 6em;
+	}
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
@@ -6635,7 +6637,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important; }
+  padding-bottom: 3rem; }
 
 .pl-5,
 .px-5 {
@@ -7796,7 +7798,7 @@ button.bg-dark:focus {
   text-align: right !important; }
 
 .text-center {
-  text-align: center !important; }
+  text-align: left !important; }
 
 @media (min-width: 576px) {
   .text-sm-left {
@@ -8275,7 +8277,7 @@ h1, h2, h3, h4, h5,
       .hero-wrap .overlay {
         height: 1150px; } }
   .hero-wrap.hero-wrap-2 {
-    height: 700px !important;
+    /*height: 700px !important;*/
     position: relative; }
     .hero-wrap.hero-wrap-2 .overlay {
       width: 100%;
@@ -9978,6 +9980,7 @@ h1.mb-4 {
     overflow: hidden; /* Ensure pseudo-element doesn’t overflow */
     font-size: calc(2.5rem + 1vw); /* Responsive font size */
     line-height: 1.2; /* Adjust line-height for better text alignment */
+	width: 8em;
 }
 
 
@@ -9992,7 +9995,6 @@ h1.mb-4 {
 
 @media only screen and (max-width: 600px) {
   .text {
-    margin-bottom: 160%;
   }
 }
 
@@ -10036,11 +10038,46 @@ h1.mb-4 {
     order: 1;  /* Attempt to reorder Nepali in the dropdown */
 }
 
+
+
+
 @media only screen and (max-width: 600px) {
 .hero-wrap{
 	height:620px;;
 }
 
+
+
+
 .oi {
 	font-size: 2em;
 }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed{
+	color: #3cb34d !important;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed{
+	
+	color: #3cb34d !important;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+.pb-5 {
+padding-bottom: 22rem; }
+}
+
+@media only screen and (max-width: 600px) {
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+	top: 10em;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.banner-section {
+    margin-bottom: 49em;
+}
+}
+
