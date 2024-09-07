@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TRIALSEWA - Mock Test Prepation</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+	<style>
+      .correct { color: green; font-weight: bold; }
+      .incorrect { color: red; font-weight: bold; }
+    </style>
+	
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="65px"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="partner.html" class="nav-link">Our Partners</a></li>
+            <li class="nav-item"><a href="pricing.html" class="nav-link">Trial Packages</a></li>
+            <li class="nav-item"><a href="mocktest.html" class="nav-link">Mock Test</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="google_translate_element"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+   <div class="hero-wrap" style="background-image: url('images/INNER_BANNER.jpg'); height: 520px;" data-stellar-background-ratio="0.5">
+  <div class="container h-100 d-flex align-items-center justify-content-center">
+    <div class="row no-gutters align-items-center justify-content-center text-center">
+      <div class="col-md-9 ftco-animate">
+        <p class="breadcrumbs mb-0"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Mock Test</span></p>
+        <h1 class="mb-4 bread">Mock Test</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  <!-- Mock Test Section -->
+    <section class="mocktest-section">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2>Practice for Your Trial Exam</h2>
+            <p>Test your knowledge with our mock questions based on the driving trial exam in Nepal.</p>
+          </div>
+        </div>
+
+        <!-- Mock Exam Questions -->
+        <div class="row">
+          <div class="col-md-12">
+            <form id="mockTestForm">
+               <!-- Question 1 -->
+              <div class="form-group">
+                <label>1. What is the minimum age to apply for a driving license in Nepal?</label><br>
+                <input type="radio" name="q1" value="18" required> 18<br>
+                <input type="radio" name="q1" value="21"> 21<br>
+                <input type="radio" name="q1" value="16"> 16<br>
+                <input type="radio" name="q1" value="25"> 25<br>
+                <span id="feedback1"></span>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="form-group">
+                <label>2. What does a red traffic light indicate?</label><br>
+                <input type="radio" name="q2" value="Stop" required> Stop<br>
+                <input type="radio" name="q2" value="Go"> Go<br>
+                <input type="radio" name="q2" value="Slow down"> Slow down<br>
+                <input type="radio" name="q2" value="Turn right"> Turn right<br>
+                <span id="feedback2"></span>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="form-group">
+                <label>3. Which side of the road should you drive on in Nepal?</label><br>
+                <input type="radio" name="q3" value="Left" required> Left<br>
+                <input type="radio" name="q3" value="Right"> Right<br>
+                <span id="feedback3"></span>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="form-group">
+                <label>4. What should you do when approaching a pedestrian crossing?</label><br>
+                <input type="radio" name="q4" value="Stop" required> Stop<br>
+                <input type="radio" name="q4" value="Speed up"> Speed up<br>
+                <input type="radio" name="q4" value="Honk"> Honk<br>
+                <input type="radio" name="q4" value="Ignore"> Ignore<br>
+                <span id="feedback4"></span>
+              </div>
+
+              <!-- Question 5 -->
+              <div class="form-group">
+                <label>5. What does a yellow traffic light mean?</label><br>
+                <input type="radio" name="q5" value="Slow down" required> Slow down<br>
+                <input type="radio" name="q5" value="Go"> Go<br>
+                <input type="radio" name="q5" value="Stop"> Stop<br>
+                <span id="feedback5"></span>
+              </div>
+
+              <!-- Question 6 -->
+              <div class="form-group">
+                <label>6. Which document is necessary to carry while driving in Nepal?</label><br>
+                <input type="radio" name="q6" value="Driving license" required> Driving license<br>
+                <input type="radio" name="q6" value="Birth certificate"> Birth certificate<br>
+                <input type="radio" name="q6" value="Passport"> Passport<br>
+                <input type="radio" name="q6" value="Aadhar card"> Aadhar card<br>
+                <span id="feedback6"></span>
+              </div>
+
+              <!-- Question 7 -->
+              <div class="form-group">
+                <label>7. What does a circular traffic sign with a red border indicate?</label><br>
+                <input type="radio" name="q7" value="Prohibition" required> Prohibition<br>
+                <input type="radio" name="q7" value="Information"> Information<br>
+                <input type="radio" name="q7" value="Warning"> Warning<br>
+                <span id="feedback7"></span>
+              </div>
+
+              <!-- Question 8 -->
+              <div class="form-group">
+                <label>8. What should you do if your vehicle breaks down on the road?</label><br>
+                <input type="radio" name="q8" value="Use hazard lights" required> Use hazard lights<br>
+                <input type="radio" name="q8" value="Leave the vehicle"> Leave the vehicle<br>
+                <input type="radio" name="q8" value="Stop in the middle of the road"> Stop in the middle of the road<br>
+                <span id="feedback8"></span>
+              </div>
+
+              <!-- Question 9 -->
+              <div class="form-group">
+                <label>9. What is the speed limit in a residential area in Nepal?</label><br>
+                <input type="radio" name="q9" value="40 km/h" required> 40 km/h<br>
+                <input type="radio" name="q9" value="60 km/h"> 60 km/h<br>
+                <input type="radio" name="q9" value="80 km/h"> 80 km/h<br>
+                <input type="radio" name="q9" value="100 km/h"> 100 km/h<br>
+                <span id="feedback9"></span>
+              </div>
+
+              <!-- Question 10 -->
+              <div class="form-group">
+                <label>10. What is the meaning of a triangular traffic sign?</label><br>
+                <input type="radio" name="q10" value="Warning" required> Warning<br>
+                <input type="radio" name="q10" value="Information"> Information<br>
+                <input type="radio" name="q10" value="Prohibition"> Prohibition<br>
+                <span id="feedback10"></span>
+              </div>
+
+              <!-- Question 11 -->
+              <div class="form-group">
+                <label>11. When is it allowed to overtake another vehicle?</label><br>
+                <input type="radio" name="q11" value="When the road is clear" required> When the road is clear<br>
+                <input type="radio" name="q11" value="At any time"> At any time<br>
+                <input type="radio" name="q11" value="On a curve"> On a curve<br>
+                <span id="feedback11"></span>
+              </div>
+
+              <!-- Question 12 -->
+              <div class="form-group">
+                <label>12. What is the use of the rearview mirror?</label><br>
+                <input type="radio" name="q12" value="To see traffic behind you" required> To see traffic behind you<br>
+                <input type="radio" name="q12" value="To check makeup"> To check makeup<br>
+                <input type="radio" name="q12" value="No use"> No use<br>
+                <span id="feedback12"></span>
+              </div>
+
+              <!-- Question 13 -->
+              <div class="form-group">
+                <label>13. What does a double solid yellow line in the middle of the road mean?</label><br>
+                <input type="radio" name="q13" value="No overtaking" required> No overtaking<br>
+                <input type="radio" name="q13" value="Parking allowed"> Parking allowed<br>
+                <input type="radio" name="q13" value="You can cross it anytime"> You can cross it anytime<br>
+                <span id="feedback13"></span>
+              </div>
+
+              <!-- Question 14 -->
+              <div class="form-group">
+                <label>14. What should you do if you miss your exit on a highway?</label><br>
+                <input type="radio" name="q14" value="Take the next exit" required> Take the next exit<br>
+                <input type="radio" name="q14" value="Reverse"> Reverse<br>
+                <input type="radio" name="q14" value="Stop and turn back"> Stop and turn back<br>
+                <span id="feedback14"></span>
+              </div>
+
+              <!-- Question 15 -->
+              <div class="form-group">
+                <label>15. What is the meaning of a flashing yellow light?</label><br>
+                <input type="radio" name="q15" value="Proceed with caution" required> Proceed with caution<br>
+                <input type="radio" name="q15" value="Stop"> Stop<br>
+                <input type="radio" name="q15" value="Go"> Go<br>
+                <span id="feedback15"></span>
+              </div>
+
+              <!-- Question 16 -->
+              <div class="form-group">
+                <label>16. What is the first thing you should do if involved in an accident?</label><br>
+                <input type="radio" name="q16" value="Call emergency services" required> Call emergency services<br>
+                <input type="radio" name="q16" value="Drive away"> Drive away<br>
+                <input type="radio" name="q16" value="Ignore it"> Ignore it<br>
+                <span id="feedback16"></span>
+              </div>
+
+              <!-- Question 17 -->
+              <div class="form-group">
+                <label>17. What does a green arrow with a red light mean?</label><br>
+                <input type="radio" name="q17" value="You can go in the direction of the arrow" required> You can go in the direction of the arrow<br>
+                <input type="radio" name="q17" value="Stop"> Stop<br>
+                <input type="radio" name="q17" value="Go straight"> Go straight<br>
+                <span id="feedback17"></span>
+              </div>
+
+              <!-- Question 18 -->
+              <div class="form-group">
+                <label>18. When should you use your horn?</label><br>
+                <input type="radio" name="q18" value="To alert other drivers" required> To alert other drivers<br>
+                <input type="radio" name="q18" value="Whenever you want"> Whenever you want<br>
+                <input type="radio" name="q18" value="To greet someone"> To greet someone<br>
+                <span id="feedback18"></span>
+              </div>
+
+              <!-- Question 19 -->
+              <div class="form-group">
+                <label>19. What should you do when a traffic police officer signals you to stop?</label><br>
+                <input type="radio" name="q19" value="Stop immediately" required> Stop immediately<br>
+                <input type="radio" name="q19" value="Ignore"> Ignore<br>
+                <input type="radio" name="q19" value="Drive away"> Drive away<br>
+                <span id="feedback19"></span>
+              </div>
+
+              <!-- Question 20 -->
+              <div class="form-group">
+                <label>20. What is the meaning of a "No Entry" sign?</label><br>
+                <input type="radio" name="q20" value="Do not enter this road" required> Do not enter this road<br>
+                <input type="radio" name="q20" value="One way only"> One way only<br>
+                <input type="radio" name="q20" value="Parking allowed"> Parking allowed<br>
+                <span id="feedback20"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group">
+                <button type="button" onclick="checkAnswers()" class="btn btn-primary py-3 px-4">Submit Answers</button>
+              </div>
+            </form>
+          </div>
+        </div>
+		
+		
+      </div>
+    </section>
+
+
+
+  
+  
+  
+	<div style="margin:3em"></div>
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About TRIALSEWA</h2>
+              <p>TRIALSEWA is a platform that simplifies booking vehicle trials at local centers, providing a seamless experience for users. We act as a bridge between you and the trial centers, making the process hassle-free.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://x.com/trialsewa" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://facebook.com/trialsewa" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://instagram.com/trialsewa" target="_blank"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="blog.html" class="py-2 d-block">Blog</a></li>
+                <li><a href="services.html" class="py-2 d-block">Services</a></li>
+                <li><a href="terms.html" class="py-2 d-block">Terms and Conditions</a></li>
+                <li><a href="pricing.html" class="py-2 d-block">Best Price Guarantee</a></li>
+                <li><a href="privacy.html" class="py-2 d-block">Privacy &amp; Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Customer Support</h2>
+              <ul class="list-unstyled">
+                <li><a href="faq.html" class="py-2 d-block">FAQ</a></li>
+                <li><a href="payment.html" class="py-2 d-block">Payment Options</a></li>
+                <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">Samakhusi, Ranibari Marga, Kathmandu, Nepal</span></li>
+				  <li><a href="tel:+977014956900"><span class="icon icon-phone"></span><span class="text">+977014956900</span></a></li>
+								<li><a href="tel:+9779861736134"><span class="icon icon-phone"></span><span class="text">+9779861736134</span></a></li>
+							    <li><a href="tel:+9779864154032"><span class="icon icon-phone"></span><span class="text">+9779864154032</span></a></li>
+                  <li><a href="mailto:support@trialsewa.com"><span class="icon icon-envelope"></span><span class="text">support@trialsewa.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> TRIALSEWA. All rights reserved | Powered by <a href="https://cabtm.com" target="_blank">Cabtm Nepal Pvt Ltd</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+	<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ne,hi,fr,es,zh-CN,ja',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+	    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		
+		<script>
+      // Define the correct answers
+      const correctAnswers = {
+        q1: "18",
+          q2: "Stop",
+          q3: "Left",
+          q4: "Stop",
+          q5: "Slow down",
+          q6: "Driving license",
+          q7: "Prohibition",
+          q8: "Use hazard lights",
+          q9: "40 km/h",
+          q10: "Warning",
+          q11: "When the road is clear",
+          q12: "To see traffic behind you",
+          q13: "No overtaking",
+          q14: "Take the next exit",
+          q15: "Proceed with caution",
+          q16: "Call emergency services",
+          q17: "You can go in the direction of the arrow",
+          q18: "To alert other drivers",
+          q19: "Stop immediately",
+          q20: "Do not enter this road"
+      };
+
+      function checkAnswers() {
+        let score = 0;
+
+        // Get all the questions
+        const questions = document.forms["mockTestForm"].elements;
+
+        // Check each question
+        for (let i = 1; i <= 20; i++) {
+          const questionName = 'q' + i;
+          const selectedAnswer = questions[questionName].value;
+          
+          // Display feedback
+          const feedbackElement = document.getElementById('feedback' + i);
+          if (selectedAnswer === correctAnswers[questionName]) {
+            feedbackElement.innerHTML = '<span class="correct">Correct!</span>';
+            score++;
+          } else {
+            feedbackElement.innerHTML = '<span class="incorrect">Incorrect!</span>';
+          }
+        }
+      }
+    </script>
+
+  </body>
+</html>
