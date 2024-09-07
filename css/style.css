@@ -10102,3 +10102,7 @@ padding-bottom: 22rem; }
             flex-wrap: wrap !important;
         }
 }
+
+.ikBUCo .tally-powered {
+    display: none !important;
+}
