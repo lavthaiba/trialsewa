@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Roboto";
       text-align: center;
       background-color: #222; /* Dark background */
       color: #fff; /* Light text */
@@ -22,12 +22,12 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow */
     }
     .thank-you h1 {
-      color: #28a745;
+      color: #fff;
       font-size: 32px;
     }
     .thank-you p {
       font-size: 18px;
-      margin: 15px 0;
+      margin: 20px 0;
     }
     .home-btn {
       display: inline-block;
@@ -42,13 +42,32 @@
     }
     .home-btn:hover {
       background-color: #218838; /* Darker green on hover */
-	  color: #fff;
+    }
+    .success-message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .success-message i {
+      font-size: 48px;
+      color: #28a745;
+      margin-right: 10px;
+    }
+    .success-message span {
+      font-size: 32px;
+      color: #28a745;
     }
   </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="thank-you">
-    <h1>Thank you for your booking with <i>TRIALSEWA!</i></h1>
+    <div class="success-message">
+      <i class="fas fa-check-circle"></i>
+      <span>Success</span>
+    </div>
+    <h1>Thank you for your booking with <i style="color:#28a745">TRIALSEWA!</i></h1>
     <p>Your booking has been successfully submitted. One of our representatives will get in touch with you very soon.</p>
     <a href="index.html" class="home-btn">Go to Home</a>
   </div>
