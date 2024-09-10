@@ -10103,5 +10103,10 @@ padding-bottom: 22rem; }
         }
 }
 
+@media only screen and (max-width: 600px) {
+.col-md-9.ftco-animate.fadeInUp.ftco-animated {
+    padding-left: 2em;
+    top: 7em;
+}
 
-
+}
