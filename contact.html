@@ -26,6 +26,26 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	
+	<style>
+	.shadow-form {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-form:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    padding: 30px;
+    background-color: #fff;
+    max-width: 600px;
+    
+}
+
+	</style>
 
     <script>
       // JavaScript function to validate the form
@@ -37,7 +57,7 @@
         var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
         if (name == "") {
-          alert("Name must be filled out");
+          alert("Name cannot be empty");
           return false;
         }
         if (email == "" || !emailPattern.test(email)) {
@@ -45,11 +65,11 @@
           return false;
         }
         if (subject == "") {
-          alert("Subject must be filled out");
+          alert("Subject cannot be empty");
           return false;
         }
         if (message == "") {
-          alert("Message must be filled out");
+          alert("Message cannot be empty");
           return false;
         }
         return true;
@@ -124,7 +144,7 @@
         <div class="row block-9 justify-content-center mb-5">
           <div class="col-md-8 mb-md-5">
             <h2 class="text-center">Got any questions? <br> Please do not hesitate to send us a message</h2>
-            <form name="contactForm" action="https://formspree.io/f/manwazwe" method="post"" class="bg-light p-5 contact-form" onsubmit="return validateForm()">
+            <form name="contactForm" action="https://formspree.io/f/manwazwe" method="post"" class="bg-light p-5 contact-form shadow-form" onsubmit="return validateForm()">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" placeholder="Your Name">
               </div>
