@@ -10008,7 +10008,7 @@ h1.mb-4 {
 
 @media only screen and (max-width: 600px) {
 .d-flex{
-	text-align:center;
+	text-align:left;
 }
 
 }
