@@ -96,6 +96,46 @@
       .thank-you {
         margin: 10em auto;
       }
+	  
+	  @media only screen and (max-width: 600px) {
+  body {
+    padding: 20px; /* Reducing padding for mobile */
+  }
+
+  .thank-you {
+    margin: 2em auto; /* Reduce margin on smaller screens */
+    padding: 20px; /* Adjust padding */
+    max-width: 100%; /* Ensure the container fits within the viewport */
+    box-shadow: none; /* Optional: remove shadow for a cleaner look */
+  }
+
+  .success-message i {
+    font-size: 24px; /* Smaller icon size */
+  }
+
+  .success-message span {
+    font-size: 16px; /* Slightly smaller text */
+  }
+
+  .notice-card {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .home-btn {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px 20px; /* Adjust button padding */
+  }
+  
+  
+  .notice-card p {
+	font-size:12px;
+  }
+  
+  .thank-you p {
+  margin:0;
+  }
+}
+
     }
   </style>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -111,7 +151,7 @@
     
     <!-- Notice Card -->
     <div class="notice-card">
-      <h3>Notice</h3>
+      <h3>Help & Support</h3>
       <p>For any inquiries or assistance, you can reach us at:</p>
       <p>Phone: 
         <a href="tel:+9779014956900">+9779014956900</a>, 
