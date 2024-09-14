@@ -9,27 +9,27 @@
     body {
       font-family: "Roboto";
       text-align: center;
-      background-color: #Fff; /* Dark background */
-      color: #fff; /* Light text */
+      background-color: #fff;
+      color: #333;
       padding: 50px;
     }
     .thank-you {
-      background: #F5FFF7; /* Slightly lighter dark background */
+      background: #F5FFF7;
       border-radius: 8px;
       padding: 30px;
       max-width: 600px;
       margin: 50px auto;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     .thank-you h1 {
-      color: #fff;
+      color: #28a745;
       font-size: 32px;
     }
     .thank-you p {
       font-size: 16px;
       margin: 20px 0;
-	  color:#444;
-	  line-height:1.6em;
+      color: #444;
+      line-height: 1.6em;
     }
     .home-btn {
       display: inline-block;
@@ -37,14 +37,14 @@
       margin-top: 20px;
       font-size: 16px;
       color: #fff;
-      background-color: #28a745; /* Green button */
+      background-color: #28a745;
       border-radius: 5px;
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
     a.home-btn:hover {
-      background-color: #218838; /* Darker green on hover */
-	  color:#fff;
+      background-color: #218838;
+      color: #fff;
     }
     .success-message {
       display: flex;
@@ -61,15 +61,42 @@
       font-size: 18px;
       color: #28a745;
     }
-	
-	@media only screen and (max-width: 600px) {
-	.thank-you {
-    
-    /*margin: 10em auto;*/
-	}
-	}
-	
-	
+
+    /* Card design for notice */
+    .notice-card {
+      background-color: #fff;
+      border: 1px solid #28a745;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      color: #333;
+    }
+    .notice-card h3 {
+      margin-top: 0;
+      color: #28a745;
+      font-size: 18px;
+    }
+    .notice-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6em;
+    }
+
+    .notice-card a {
+      color: #28a745;
+      text-decoration: none;
+    }
+    .notice-card a:hover {
+      text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .thank-you {
+        margin: 10em auto;
+      }
+    }
   </style>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
@@ -80,8 +107,26 @@
       <span>Success</span>
     </div>
     <p style="color:#28a745">Thank you for your booking with TRIALSEWA!</p>
-    <p>Your booking has been successfully submitted. One of our representatives will get in touch with you very soon.</p>
-    <a href="index.html" class="home-btn">HOME</a>
+    <p>Your booking has been successfully submitted. One of our representatives will get in touch with you very soon and guide you through further process.</p>
+    
+    <!-- Notice Card -->
+    <div class="notice-card">
+      <h3>Notice</h3>
+      <p>For any inquiries or assistance, you can reach us at:</p>
+      <p>Phone: 
+        <a href="tel:+9779014956900">+9779014956900</a>, 
+        <a href="tel:+9779861736134">+9779861736134</a>, 
+        <a href="tel:+9779864154032">+9779864154032</a>
+      </p>
+      <p>Email: 
+        <a href="mailto:support@trialsewa.com">support@trialsewa.com</a>
+      </p>
+      <p>Website: 
+        <a href="https://trialsewa.com" target="_blank">https://trialsewa.com</a>
+      </p>
+    </div>
+
+    <a href="index.html" class="home-btn">BACK TO HOME</a>
   </div>
 </body>
 </html>

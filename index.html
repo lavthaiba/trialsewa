@@ -94,6 +94,83 @@
     color: #fff !important;
 }
 
+ 
+ /* Card section styling */
+  .card-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+  }
+  .notice-card {
+    width: 57%; /* Adjusted width for better alignment */
+    max-width: 1100px; /* Keeps the content centered on larger screens */
+    background-color: #ebfdef;
+    border: 1px solid #28a745; /* Green border to match brand color */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+  }
+  .notice-card h3 {
+    color: #28a745;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .notice-card p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  .learn-more-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .learn-more-btn:hover {
+    background-color: #218838;
+	color:#fff;
+  }
+
+  @media (max-width: 768px) {
+    .notice-card {
+      padding: 20px;
+    }
+    .notice-card h3 {
+      font-size: 24px;
+    }
+    .notice-card p {
+      font-size: 16px;
+    }
+    .learn-more-btn {
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .notice-card {
+      width: 90%; /* Slightly adjusted for smaller screens */
+    }
+    .learn-more-btn {
+      font-size: 14px;
+    }
+  }
+  
+   .glow-text {
+    font-size: 28px;
+    color: #28a745a1;
+    font-weight: bold;
+    text-shadow: 0 0 0px #ffffff8c, 1px 2px 3px #ffffff66, 1px 3px 6px #00ff3a9e, 0 0 0px #ffffffb8, 0 0 2px #ffffff87;
+    margin-bottom: 20px;
+  }
+  
 
     </style>
   
@@ -271,6 +348,15 @@
         </div>
 		</div>
     </section>
+	
+	<div class="card-section">
+  <div class="notice-card">
+  <div class="glow-text">
+    <h3>Free Pick and Drop Service Available!</h3></div>
+    <p>Book your trial now and enjoy a complimentary pick-up and drop-off service at your convenience. Don’t miss out—available for all bookings made via our website!</p>
+    <a href="pricing.html" class="learn-more-btn">Learn More</a>
+  </div>
+</div>
 
     <section class="ftco-section">
       <div class="container">
